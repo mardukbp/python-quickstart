@@ -1,0 +1,28 @@
+[project]
+name = "proj"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Marduk Bolaños", email = "mardukbp@mac.com"},
+]
+dependencies = [
+]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "Apache 2.0"}
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.scripts]
+test = "pytest"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=8.2.1",
+]
